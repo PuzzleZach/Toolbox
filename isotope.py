@@ -3,6 +3,35 @@ import argparse as argp
 import scrap_utils as utils
 from bs4 import BeautifulSoup as soup
 
+'''
+Isotope will be a utility for law enforcement and cybersecurity analysts who need to retrieve data from different websites. 
+Rather than building scraping tools for each site, Isotope will be an all-in-one utility that 
+abstracts most of the work and focuses on the actual data.
+
+## TODO
+
+
+### CLI 
+
+- Handle URL input
+- HREF Enumeration
+- HTTP Header extraction
+
+### GUI
+
+- Translate CLI functions to display fields
+- Buttons to search by HTML attribute (p, img, href)
+- Search field for phrases and text
+- Add items to a docx report
+- docx preview window
+
+
+One concern is that some sites will require cookies / tokens so there could be a 
+snapshot utility included that lets you manually go to a page and then it pulls all the data. 
+
+Selenium would be good for this.
+'''
+
 version = "0.0.1"
 ISO_COMMANDS = ["help", "find", "generate", "add", "preview", "show", "swap", "dump"]
 ISO_HELP = {
